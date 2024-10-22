@@ -12,19 +12,19 @@ def complement(sequence):
 	comp_dict = {'A':'T', 'C':'G', 'G':'C', 'T':'A'}  #create dictionary
 	
 	for i in range(len(sequence)):
-		comp.append(comp_dict.get(sequence[i]))
+		comp.append(comp_dict.get(sequence[i])) #find complement
 	return comp
 
 
 def reverse(sequence):
 	rev = []
 
-	for i in range(len(sequence),0, -1):
+	for i in range(len(sequence),0, -1): #reverse sequence
 		rev.append(sequence[i-1])
 	return rev
 
     
-def reverse_complement(sequence):
+def reverse_complement(sequence): #complement then reverse sequence
 	comp = complement(sequence)
 	revcomp = reverse(comp)
 	return revcomp

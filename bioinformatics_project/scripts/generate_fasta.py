@@ -10,10 +10,10 @@ import random
 
 def random_fasta(seqlen=1000000):
     bases = ['A', 'C', 'G', 'T']
-    sequence = "".join(random.choices(bases, k=seqlen))
+    sequence = "".join(random.choices(bases, k=seqlen)) #pick random bases til defined length 
 
     with open('/workspaces/05-first-exam-nikita-gounder/bioinformatics_project/data/random_sequence.fasta', 'w') as file:
-        for base in range(0, len(sequence), 80):
+        for base in range(0, len(sequence), 80): #add dna seq to file, 80 bases per line
             line = sequence[base:base+80]
             file.write(line + '\n') 
 
