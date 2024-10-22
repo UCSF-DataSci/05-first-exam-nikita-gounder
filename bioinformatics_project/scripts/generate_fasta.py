@@ -20,10 +20,9 @@ def random_fasta(seqlen=1000000):
     print(f"Random DNA sequence generated and saved to bioinformatics_project/data/random_sequence.fasta")
  
            
-      
+
 
 if __name__ == "__main__":
     random_fasta()
-
 
 

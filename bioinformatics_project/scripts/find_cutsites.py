@@ -51,5 +51,3 @@ if __name__ == "__main__":
     fasta_cutsites(arg.fasta_path, arg.cut_seq)
 
 
-
-   

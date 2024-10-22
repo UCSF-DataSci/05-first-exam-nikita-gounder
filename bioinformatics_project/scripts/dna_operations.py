@@ -43,3 +43,5 @@ if __name__ == "__main__":
 	revcomp = reverse_complement(args.sequence)
 
 	print(f"Original sequence: {args.sequence} /n Complement: {comp} /n Reverse: {rev} /n Reverse complement: {revcomp}")
+
+
